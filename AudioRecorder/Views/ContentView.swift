@@ -45,9 +45,11 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationBarTitle("AudioRecorder" , displayMode: .inline)
+            .navigationBarTitle("AudioRecorder")
+            .navigationBarItems(trailing: EditButton())
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
